@@ -1,0 +1,39 @@
+
+/*<!---กล่องสินค้าซ้าย menu-->*/
+.slidebar {
+    width: 30%;
+    padding: 10px;
+/*ตั้งค่ากล่อง เมนู*/
+display: flex;
+flex-direction: column;
+}
+
+/*<!---กรอบ search->*/
+.slidebar-search{
+    padding: 10px;
+    border: 2px solid transparent;
+/* มุมกล่องเขียนขาว  */
+    width: 100%;
+    outline: none; /* ลบขอบ */
+    border-radius: 10px;
+    /*border-radiu โค้ง*/
+    margin-bottom: 20px;
+}
+
+/*    box-text type      */
+.slidebar-item{
+    background-color: white;
+    margin-bottom: 10px;
+/*margin-bottom เว้นระยะห่าง*/
+/*border ขอบ*/
+padding: 10px;
+border-radius: 5px;
+border: 1px solid red;
+}
+
+
+/* สี poiter เมื่อเอามเมาส์ชี้ */
+.slidebar-item:hover{
+    background-color: tomato;
+    color: wheat;
+}

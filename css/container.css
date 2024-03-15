@@ -1,0 +1,18 @@
+.container {
+    width: 90vw;
+    background: #f2f2f2;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+/*   Nav   */
+.nav-basket{
+    max-width: 90vw;
+    height: 5vw;
+    background: linear-gradient(125deg, #e61b36, #9c1032);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

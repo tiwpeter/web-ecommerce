@@ -1,0 +1,53 @@
+/* detai สินค้า */
+.modal-img {
+    height: 20vw;
+    width: 20vw;
+    object-fit: cover;
+    border: 10px;
+}
+
+/* modal ส่วนคุม */
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*<!--เป็นตัวอธิบาย เวลากด detail-->*/
+.modal-page {
+    min-width: 30vw;
+    max-width: 60vw;
+    max-height: 30vw;
+    background-color: azure;
+    border-radius: 15px;
+    padding: 20px;
+    /* เป็นตัวตัดล่าง เลื่อน */
+    overflow: scroll;
+}
+
+/* รูป */
+.modal-img {
+    height: 20vw;
+    width: 20vw;
+    object-fit: cover;
+    border: 10px;
+}
+
+/* คำอธิบาย */
+.modal-detell {
+    margin-left: 20px; /* ปรับระยะห่างของคำอธิบาย */
+    padding: 15px; /* เพิ่ม padding เพื่อให้คำอธิบายมีพื้นที่สัมพันธ์กับข้อมูล */
+    flex-grow: 1; /* ควบคุมความกว้างของ modal-detell เพื่อให้คำอธิบายยืดเต็มพื้นที่ที่เหลืออยู่ */
+}
+
+/* ปรับเป็นข้างๆด้วยกัน */
+.modal-content {
+    width: 100%;
+    display: flex;
+}

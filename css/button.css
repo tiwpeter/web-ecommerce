@@ -1,0 +1,28 @@
+
+.bb-contrel{
+    display: flex;
+    justify-content:flex-end;
+  
+  }
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size:1.2vw;
+    transition:0.3s;
+}
+
+
+.btn-buy{
+    background: linear-gradient(125deg, #e61b36, #9c1032);
+    color: #fff;
+    margin-left:10px;
+
+}
+
+
+.product-title {
+    font-size: 1.5vw;
+}

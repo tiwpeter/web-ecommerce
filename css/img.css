@@ -1,0 +1,64 @@
+/*หมี*/
+.bear{
+    width: 50px;
+}
+
+/* เกี่ยวกับอะไรซักอย่าง ซ้ำ!
+.productNEW {
+    width: 100% ;
+    height: 50vw;
+    padding: 20px;
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px 
+/*padding เว้นเข้ามาด้านใน เป็นกล่อง*/
+/* ดูก๊อป ไม่ต้ิองเขียนเจอส่วนหน้าสนใจค่อยมาเขียน */
+/*กี่คอลัม ตามด้วยความยาว*/
+
+.product-img{
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+/*ตัวคุม*/
+.product {
+    width: 100% ;
+/*    height: 50vw; */
+    padding: 20px;
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* ความห่างรูป */
+    grid-gap:20px ;
+    
+/*padding เว้นเข้ามาด้านใน เป็นกล่อง*/
+/* ดูก๊อป ไม่ต้ิองเขียนเจอส่วนหน้าสนใจค่อยมาเขียน */
+/*กี่คอลัม ตามด้วยความยาว*/
+
+}
+
+/**   ตัวชี้รูป ****/
+.product-item{
+    background-color: rgba(255, 255, 255, 0.9); /* เพิ่มความโปร่งใสให้กับสีขาว */
+    border-radius: 10px;
+
+
+
+
+
+
+/* เปลี่ยน เมาส์*/
+cursor: pointer;
+/*ชี้รูปสมูท*/
+transition: 0.3s;
+}
+
+.product-item:hover{
+ transform:scale(1.03) ;
+/* ขยายภาพเวลาชี้รูป*/
+
+}
