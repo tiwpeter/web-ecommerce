@@ -68,6 +68,20 @@
             display: inline-block;
             color: #faca51;
             }
+
+            .carlist-left img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .carlist-left {
+            display: flex;
+            align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางในแนวตั้ง */
+            }
+        
+            .carlist-detail {
+                flex: 1; /* ขยายขนาดเพื่อให้ข้อความอยู่ในพื้นที่ที่เหลือ */
+            }
  
         </style>
 </head>
@@ -360,6 +374,58 @@
     </div>
   </div>
 </div>
+<!--แสดงก็ตัวเมื่อคลิก model-->
+
+<!--cert-->
+<div id="modalCart" class="modal"  >
+    <div class="modal-bg"></div>
+    <div class="modal-page">
+        <h2> My cart </h2>
+        <br>
+        <div id="mycart" class="cartlist">
+            <div class="cartlist-item" >
+                
+                <div class="carlist-left" style="display: flex;">
+                    <img src="https://img.lazcdn.com/g/p/42ee1733b303f73007eaa36bd1633d97.jpg_170x170q80.jpg_.webp" alt="" >
+                    <div class="carlist-detail">
+                        <p style="font-size: 1.5vw;">Xiaomi Redmi 12 (8+256) Midnight Black</p>
+                        <p style="font-size: 1.2vw;">400</p>
+                    </div>
+                </div>
+                <div class="carlist-left" style="display: flex;">
+                    <img src="https://img.lazcdn.com/g/p/42ee1733b303f73007eaa36bd1633d97.jpg_170x170q80.jpg_.webp" alt="" >
+                    <div class="carlist-detail">
+                        <p style="font-size: 1.5vw;">Xiaomi Redmi 12 (8+256) Midnight Black</p>
+                        <p style="font-size: 1.2vw;">400</p>
+                    </div>
+                </div>
+                
+                <div class="carlist-right" style="display: flex;align-items: center;justify-content: flex-end;">
+                    <p style="margin-right: 162px;">Total :</p>
+                    <p style="color: #f57224;">700</p>
+                </div>
+
+                <div class="carlist-right" style="display: flex;align-items: center;justify-content: flex-end;">
+                    <p class="btnc">-</p>
+                    <p id="counttitems${i}" style="margin: 0 20px;">1</p>
+                    <p class="btnc">+</p>
+                </div>
+                
+            
+            </div>
+        </div>
+        <div class="bb-contrel">
+            <button onclick="closeModal()" class="btn">
+                cancel
+            </button>
+            <button onclick="buynow ()" class="btn btn-buy">
+                Add to cart
+            </button>
+        </div>
+    </div>
+
+</div>
+<!--cert-->
 
     <!--foot-->
     <section class="new-desktop-footer " data-config="{}">

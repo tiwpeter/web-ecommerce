@@ -29,6 +29,7 @@
     padding: 20px;
     /* เป็นตัวตัดล่าง เลื่อน */
     overflow: scroll;
+    width: 52vw;
 }
 
 /* รูป */
