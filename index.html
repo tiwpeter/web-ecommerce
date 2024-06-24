@@ -365,7 +365,7 @@
                        <button onclick="closeModal()" class="btn">
                            close
                        </button>
-                       <button onclick="addcart() "class="btn btn-buy">
+                       <button onclick="addcart()" class="btn btn-buy">
                            add to cart
                        </button>
                        <!-- บรรทัดใหม่ Easy  40.20 ยังไม่แก้ตัวสินค้า-->
@@ -418,8 +418,8 @@
             <button onclick="closeModal()" class="btn">
                 cancel
             </button>
-            <button onclick="addToCart(product.id)" class="btn btn-buy">
-                Add to cart
+            <button class="btn btn-buy">
+                Buy Now
             </button>
         </div>
     </div>
@@ -544,18 +544,15 @@
     
     </section>
     
-<!--
 <script>
     $(document).ready(() => {
-    // Existing AJAX request to fetch product data
+    // Your existing AJAX request and other functions
 
-    // Click handler for product items
-    $("#product-container").on("click", ".product-item", function() {
-        var productId = $(this).data("product-id");
-        addToCart(productId); // Call addToCart function with product id
+    // Event delegation for add to cart button click
+    $(document).on("click", ".btn-buy", function() {
+        addcart();
     });
 });
 </script>
--->
 </body>
 </html>

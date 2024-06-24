@@ -1,60 +1,47 @@
-/*ฟังชั่น เปิดกล่องสินค้า + เพิ่มสินค้า ลงใน cart*/
-// Function to open product details
-/*$(document).ready(() => {
-    // Your existing AJAX and product rendering logic
-
-    // Use event delegation for handling product clicks
-    $("#product-container").on("click", ".product-item", function() {
-        var productId = $(this).data("product-id");
-        openProduct(productId);
-    });
-
-    function openProduct(id) {
-        // Implementation remains the same
-        // Ensure product is defined and has valid data
-        if (product && product.categories && product.categories.length > 0) {
-            // Find product by id
-            var productToDisplay = getProductById(id);
-            if (productToDisplay) {
-                // Populate modal with product details
-                console.log('Product to display:', productToDisplay); // Log the product details
-                $("#mdd-img").attr('src', productToDisplay.imageUrl);
-                $('#mdd-name').text(productToDisplay.name);
-                $('#mdd-price').text(`฿${productToDisplay.price}`);
-                $('#mdd-desc').text(productToDisplay.desc);
-                
-                // Convert rating to stars
-                var stars = "";
-                for (var i = 0; i < productToDisplay.rating; i++) {
-                    stars += "★";
-                }
-                // Append remaining stars for a total of 5
-                for (var i = productToDisplay.rating; i < 5; i++) {
-                    stars += "☆";
-                }
-    
-                // Set HTML of #mdd-rating to stars
-                $('#mdd-rating').html(stars);
-    
-                // Show modal
-                $('#modal-ID').show();
+// Function to open product
+function openProduct(id) {
+    console.log(id); // Check if the id is correctly passed in
+    productindex = id;
+    console.log('productindex:', productindex); // Log the current value of productindex
+    if (product && product.categories && product.categories.length > 0) {
+        var productToDisplay = getProductById(id);
+        if (productToDisplay) {
+            console.log('Product to display:', productToDisplay); // Log the product details
+            $("#mdd-img").attr('src', productToDisplay.imageUrl);
+            
+            if (productToDisplay.imgsecond) {
+                $("#mdd-imgsecond").attr('src', productToDisplay.imgsecond);
             } else {
-                console.log(`Product with id ${id} not found.`);
+                console.log('No second image available.');
+                $("#mdd-imgsecond").attr('src', ''); // Clear the src if no second image
             }
+            
+            $('#mdd-name').text(productToDisplay.name);
+            $('#mdd-price').text(`฿${productToDisplay.price}`);
+            $('#mdd-desc').text(productToDisplay.desc);
+
+            var stars = "";
+            for (var i = 0; i < productToDisplay.rating; i++) {
+                stars += "★";
+            }
+            for (var i = productToDisplay.rating; i < 5; i++) {
+                stars += "☆";
+            }
+            $('#mdd-rating').html(stars);
+
+            $('#modal-ID').show();
         } else {
-            console.log('Product data is not available.');
+            console.log(`Product with id ${id} not found.`);
         }
+    } else {
+        console.log('Product data is not available.');
     }
-});
-
-
-// Function to retrieve product by id
-/*
-function getProductById(id) {
-    // Use flatMap to flatten the products array and find product by id
-    return product.categories.flatMap(category => category.products).find(product => product.id === id);
 }
-*/
+
+
+
+
+
 function closeModal() {
     // ปิด modal
     $(".modal").hide();
@@ -75,53 +62,81 @@ function decreaseQuantity() {
 }
 
 
-/********************************************************************** */
+// find product for id
+function getProductById(productId) {
+    if (product && product.categories && product.categories.length > 0) {
+        // Loop through categories to find the product
+        for (let i = 0; i < product.categories.length; i++) {
+            const category = product.categories[i];
+            if (category.products && category.products.length > 0) {
+                // Loop through products in the category
+                for (let j = 0; j < category.products.length; j++) {
+                    const prod = category.products[j];
+                    if (prod.id === productId) {
+                        console.log(`Found product with id ${productId}:`, prod); // Log the found product
+                        return prod; // Return the product if found
+                    }
+                }
+            }
+        }
+    }
+    console.log(`Product with id ${productId} not found.`); // Log if product with productId is not found
+    return null; // Return null if product with productId is not found
+}
+
+
+
 
 var cart = [];
 
-function addToCart(productId) {
-    // Check if the product is already in the cart
-    var existingItem = cart.find(item => item.id === productId);
+//ใช้ getProductById ที่ได้รับการเขียนมาแล้ว เพื่อค้นหาสินค้าจาก productId ในโครงสร้างข้อมูล product ที่ถูกดึงมาแล้ว และคืนค่าสินค้าที่ตรงกับ productId หากพบ หรือคืนค่า null หากไม่พบ
+// use  getProductById inteand productindex
+// productindex = id =102
+// getProductById = find 102 =convert is data 
 
-    if (existingItem) {
-        // Increment the quantity if the product is already in the cart
-        existingItem.quantity++;
-    } else {
-        // Find the product by id and add it to the cart with initial quantity
-        var productToAdd = getProductById(productId);
-
-        if (productToAdd) {
-            var cartItem = {
-                id: productToAdd.id,
-                name: productToAdd.name,
-                price: productToAdd.price,
-                img: productToAdd.imageUrl,
-                quantity: 1 // Initial quantity is 1
-            };
-
-            cart.push(cartItem);
-        } else {
-            console.log(`Product with id ${productId} not found.`);
-            return; // Exit function if product not found
-        }
+// Define addcart function in global scope
+function addcart() {
+    if (typeof product === 'undefined' || typeof productindex === 'undefined') {
+        console.log('Product data or index is undefined.');
+        return;
     }
 
-    console.log('Cart:', cart); // Log the updated cart
+    var productId = productindex;
+    console.log('Attempting to add product with productId:', productId);
 
-    // Update UI or perform any other actions (e.g., show success message)
-    Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Product added to cart successfully",
-        showConfirmButton: false,
-        timer: 1500
-    });
+    // Find the product in product data
+    var productToCart = getProductById(productId);
 
-    // Update cart count display
-    $('#cartcount').css('display', 'flex').text(cart.length);
-}
+    if (productToCart) {
+        // Check if the product already exists in cart
+        var existingProductIndex = -1;
+        for (let i = 0; i < cart.length; i++) {
+            if (productId === cart[i].id) {
+                existingProductIndex = i;
+                break;
+            }
+        }
 
-function buynow() {
-    var productId = product.id;
-    addToCart(productId);
+        // If product exists in cart, increase count
+        if (existingProductIndex !== -1) {
+            console.log('Found same product in cart');
+            cart[existingProductIndex].count++;
+        } else {
+            // If product not in cart, add it
+            var obj = {
+                index: productId,
+                id: productToCart.id,
+                name: productToCart.name,
+                price: productToCart.price,
+                img: productToCart.imageUrl,
+                count: 1 // Set count to 1 when a new product is added to cart
+            };
+            cart.push(obj);
+            console.log('Added to cart:', obj);
+        }
+    } else {
+        console.log('Product with productId:', productId, 'not found or not valid.');
+    }
+
+    console.log('Current Cart:', cart); // Log the current state of the cart after adding/updating product
 }
