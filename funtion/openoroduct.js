@@ -77,49 +77,51 @@ function decreaseQuantity() {
 
 /********************************************************************** */
 
-var cart=[];
-function addcart() {
-   var pass = true;
-   var productId = product[productindex].id;
+var cart = [];
 
-   for (let i = 0; i < cart.length; i++) {
-       if (productId == cart[i].id) {
-           console.log('found same product');
-           cart[i].count++;
-           pass = false;
-           break;
-       }
-   }
+function addToCart(productId) {
+    // Check if the product is already in the cart
+    var existingItem = cart.find(item => item.id === productId);
 
-   if (pass) {
-       var obj = {
-           index: productindex,
-           id: productId,
-           name: product[productindex].title,
-           price: product[productindex].price,
-           img: product[productindex].image,
-           count: 1 // กำหนดค่า count เป็น 1 เมื่อสินค้าใหม่ถูกเพิ่มเข้าตะกร้า
-       };
+    if (existingItem) {
+        // Increment the quantity if the product is already in the cart
+        existingItem.quantity++;
+    } else {
+        // Find the product by id and add it to the cart with initial quantity
+        var productToAdd = getProductById(productId);
 
-       cart.push(obj);
-   }
+        if (productToAdd) {
+            var cartItem = {
+                id: productToAdd.id,
+                name: productToAdd.name,
+                price: productToAdd.price,
+                img: productToAdd.imageUrl,
+                quantity: 1 // Initial quantity is 1
+            };
 
-   console.log(cart);
+            cart.push(cartItem);
+        } else {
+            console.log(`Product with id ${productId} not found.`);
+            return; // Exit function if product not found
+        }
+    }
 
-   if (pass) {
-       Swal.fire({
-           position: "top-end",
-           icon: "success",
-           title: "Product added to cart successfully",
-           showConfirmButton: false,
-           timer: 1500
-       });
-   } else {
-       // เพิ่มจำนวนสินค้าในตะกร้าและอัปเดตตัวแสดงจำนวนในตะกร้า
-       var quantityInput = document.getElementById('quantity');
-       var currentQuantity = parseInt(quantityInput.value);
-       quantityInput.value = currentQuantity + 1;
-   }
+    console.log('Cart:', cart); // Log the updated cart
 
-   $("#cartcout").css('display', 'flex').text(cart.length);
+    // Update UI or perform any other actions (e.g., show success message)
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Product added to cart successfully",
+        showConfirmButton: false,
+        timer: 1500
+    });
+
+    // Update cart count display
+    $('#cartcount').css('display', 'flex').text(cart.length);
+}
+
+function buynow() {
+    var productId = product.id;
+    addToCart(productId);
 }

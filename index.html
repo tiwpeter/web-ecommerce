@@ -418,7 +418,7 @@
             <button onclick="closeModal()" class="btn">
                 cancel
             </button>
-            <button onclick="buynow ()" class="btn btn-buy">
+            <button onclick="addToCart(product.id)" class="btn btn-buy">
                 Add to cart
             </button>
         </div>
@@ -543,6 +543,19 @@
         </div>
     
     </section>
+    
+<!--
+<script>
+    $(document).ready(() => {
+    // Existing AJAX request to fetch product data
 
+    // Click handler for product items
+    $("#product-container").on("click", ".product-item", function() {
+        var productId = $(this).data("product-id");
+        addToCart(productId); // Call addToCart function with product id
+    });
+});
+</script>
+-->
 </body>
 </html>
