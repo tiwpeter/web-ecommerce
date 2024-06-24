@@ -47,8 +47,8 @@ function closeModal() {
     $(".modal").hide();
 }
 
-/*funtion + */
 
+/*funtion +++++ number */
 function increaseQuantity() {
     var quantityInput = document.getElementById('quantity');
     var currentQuantity = parseInt(quantityInput.value);
