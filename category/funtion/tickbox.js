@@ -40,50 +40,79 @@ $(document).ready(function() {
         // Function to generate products HTML
         function generateProductsHtml(products) {
             var productsHtml = '';
-            // Map over products to generate the HTML for each product
+        
             productsHtml += products.map(product => `
-  <div class="product-item" >
-            
-       
-            <div class="list1">
-                <div class="product">
-                    <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
-                    <div class="se">
-                        <div class="imgsecond">
-                            <img src="${product.imgsecond}" alt="${product.name}" class="product-image">
+                <div class="product-item">
+                    <div class="list1">
+                        <div class="product">
+                            <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+                            <div class="se">
+                                <div class="imgsecond">
+                                    <img src="${product.imgsecond}" alt="${product.name}" class="product-image">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="list">
+                            <div class="catetitle">${product.name}</div>
+        
+                            <div class="price-container">
+                                <div class="price-cate">
+                                    <span class="pricecate">฿${product.price}</span>
+                                </div>
+                                <div class="dddvs">
+                                    <span class="preslae">-${product.sale}% Off</span>
+                                </div>
+                            </div>
+        
+                            <div class="sold">
+                                <span class="sold">${product.soldout}k sold</span>
+                                <span class="brHcE"></span>
+                                <div>
+                                    <span class="rating">
+                                    ${generateStarRating(product.rating)}
+                                    </span>
+                                </div>
+                                <div>
+                                <span class="reviews">
+                                    (${product.reviews})
+                                </span>
+                                </div>
+                            </div>
+        
                         </div>
                     </div>
                 </div>
-
-                <div class="list">
-                    <div class="catetitle">
-                    ${product.name}
-                    </div>
-
-                     <div class="price-container">
-                        <div class="price-cate">
-                            <span class="pricecate">฿${product.price}</span>
-                        </div>
-                        <div class="dddvs">
-                            <span class="preslae">-${product.sale}% Off</span>
-                        </div>
-                    </div>
-
-                    <div class="sold" >
-                        <span class="sold">${product.sold}k sold</span>
-                        <span class="brHcE"></span>
-                        <div>
-                            <span class="rating">${product.rating}(1331)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             </div>
-
             `).join('');
-
+        
             return productsHtml;
         }
+        
+        function generateStarRating(rating) {
+            const fullStars = Math.floor(rating); // Number of full stars
+            const halfStars = Math.ceil(rating - fullStars); // Number of half stars
+        
+            let starsHtml = '';
+        
+            // Adding full stars
+            for (let i = 0; i < fullStars; i++) {
+                starsHtml += '<i class="fas fa-star"></i>';
+            }
+        
+            // Adding half stars
+            if (halfStars === 1) {
+                starsHtml += '<i class="fas fa-star-half-alt"></i>';
+            }
+        
+            // Adding empty stars (if needed)
+            const emptyStars = 5 - fullStars - halfStars;
+            for (let i = 0; i < emptyStars; i++) {
+                starsHtml += '<i class="far fa-star"></i>';
+            }
+        
+            return starsHtml;
+        }
+        
 
         // Insert categories HTML into #uibox
         $('#uibox').html(generateCategoriesHtml(storedCategory));
