@@ -1,0 +1,107 @@
+.lzd-footer-width-25 {
+
+  }
+
+
+.foot{
+    float: left;
+    overflow: hidden;
+    width: 25%;
+}
+.foot2{
+    float: left;
+    overflow: hidden;
+    width: 25%;
+}
+
+.lzd-footer-width-50{
+  float: left;
+  overflow: hidden;
+  width: 50%;
+}
+
+.lzd-footer-app-downloads{
+  margin-top: 25px;
+}
+
+.lzd-footer-appIcon {
+  background-image: url(https://img.lazcdn.com/us/media/d33f1c45a4bd2fc773f8614625ed9cee-165-165.png);
+  display: inline-block;
+}
+
+.pull-left {
+  float: left;
+}
+
+.icon-logo-lazada-footer {
+  background-size: cover;
+  height: 42px;
+  width: 42px;
+}
+
+.lzd-app-download-text {
+  padding: 0 15px;
+}
+.pull-left {
+  float: left;
+}
+
+.title {
+  color: #f36f36;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.text {
+  color: #0f136d;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 2px;
+}
+
+.icon-appStore-footer {
+  background-position: -190px -124px;
+  height: 42px;
+  margin: 1px 0 0 20px;
+  width: 126px;
+}
+
+.new-desktop-footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+.lzd-footer-sprit {
+  background-image: url(https://img.lazcdn.com/g/tps/tfs/TB1dFECEMTqK1RjSZPhXXXfOFXa-986-931.png);
+  display: inline-block;
+}
+
+.icon-android-footer {
+  background-position: -568px -374px;
+  height: 43px;
+  margin-left: 10px;
+  width: 128px;
+}
+
+.new-desktop-footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+.lzd-footer-sprit {
+  background-image: url(https://img.lazcdn.com/g/tps/tfs/TB1dFECEMTqK1RjSZPhXXXfOFXa-986-931.png);
+  display: inline-block;
+}
+
+.icon-huawei-footer {
+  background-color: transparent;
+  background-image: url(https://img.lazcdn.com/g/tps/imgextra/i1/O1CN01brmkRW21eAmpV4slQ_!!6000000007009-2-tps-126-42.png);
+  height: 42px;
+  margin: 10px 0 0 20px;
+  width: 126px;
+}
+
+.new-desktop-footer a {
+  color: #888;
+  text-decoration: none;
+}

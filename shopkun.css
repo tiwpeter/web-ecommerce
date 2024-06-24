@@ -1,0 +1,11 @@
+.shopkun img {
+    height: 56px;
+    width: 100px;
+    border: 10px;
+    border-radius: 8px;
+}
+
+.image-border {
+    border: 2px solid black;
+}
+

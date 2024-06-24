@@ -1,0 +1,118 @@
+
+
+.pc-download-module{
+    height: 333px;
+    padding: 6px;
+    width: 194px;
+    background: linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0)), linear-gradient(179.27deg, #ffedd6 .83%, #ffc3e3 46.78%, #fff 99.57%), linear-gradient(0deg, #fff, #fff);
+
+
+}
+
+.cop-lasa{
+    display: flex;
+}
+
+.cop-lasa{
+    align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวนอน */
+}
+
+
+.wds{
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #6c1d00;
+    display: -webkit-box;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left: 6px;
+    max-width: 138px;
+    /*overflow: hidden;*/
+}
+
+
+.minimig {
+    width: 42px;
+    width: 42px;
+}
+
+
+.pc-download-module .m-body {
+    background-image: url(https://img.lazcdn.com/g/tps/imgextra/i2/O1CN01tceZus1IewufOY1tZ_!!6000000000919-2-tps-364-316.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 158px;
+    margin-top: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.picture-wrapper img {
+    display: inline-block;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+.pc-download-module .m-footer .content .download-btn .btn {
+    background-image: url(https://img.lazcdn.com/g/tps/imgextra/i4/O1CN01uAl8kB1wEv2DNjdhB_!!6000000006277-2-tps-125-36.png);
+    background-size: 100% auto;
+    height: 24px;
+    width: 83px;
+}
+
+
+
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;  จัดให้เนื้อหากระจัดเรียงแนวตั้ง */
+}
+
+.qr-code-wrap {
+    background: #fff;
+    height: 90px;
+    margin-right: 6px;
+   /* overflow: hidden;*/
+    width: 90px;
+}
+
+.picture-wrapper img {
+    display: block; /* ปรับเป็น block เพื่อให้รูปภาพเต็มความกว้าง */
+    height: auto;
+    max-width: 100%; /* รักษาอัตราส่วน */
+}
+
+.download-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn1, .btn2 {
+    background-size: 100% auto;
+    height: 24px;
+    width: 83px;
+}
+
+.download-btn img {
+    margin-bottom: 10px; /* ปรับความห่างด้านล่างระหว่างรูปภาพ */
+}
+
+.m-body {
+    margin-bottom: 7px; /* ปรับความห่างด้านล่างของ .m-body */
+}
+
+/*falst**/
+
+.dwss h1{
+    margin: 0; /* ลบการขยับขอบของ h1 */
+}
+
+.dwss{
+    padding: 10px;
+}

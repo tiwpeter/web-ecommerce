@@ -1,0 +1,10 @@
+.foodflex{
+    display: flex;
+    justify-content: center;
+}
+
+.dsa{
+    color: #f36f36;
+    font-size: 16px;
+    font-weight: 300;
+}

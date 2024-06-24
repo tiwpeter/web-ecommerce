@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* สำหรับการจัดให้อยู่กึ่งกลางในแนวตั้ง */
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .main-content {
+    width: 1000px; /* ขนาดของเนื้อหาหลัก */
+    height: 5300px;
+    padding: 20px;
+   /* margin-left: 20px;  ระยะห่างด้านซ้ายของเนื้อหาหลัก */
+    background-color: #fff;
+  }
+  

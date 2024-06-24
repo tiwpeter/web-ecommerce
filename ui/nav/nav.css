@@ -1,0 +1,84 @@
+.space{
+}
+
+.header-container {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    background-color: #b10e0e;
+    position: fixed;
+    width: 100%;
+    padding: 10px 65px;
+    z-index: 1000;
+}
+
+.shopkun .logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text img {
+    margin-right: 10px; /* Adjust the spacing between the image and the text */
+}
+
+
+
+.search-button img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+/*
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: -40px;
+}
+
+.search-bar input[type="text"] {
+    width: 450px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+}
+
+
+
+.search-button {
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 20px;
+}
+
+.shop-icon {
+    width: 35px;
+}
+
+.fa-cart-shopping {
+    font-size: 24px;
+    color: #333;
+}
+
+.tag-icon {
+    width: 250px;
+    margin-right: 120px;
+}
+
+.dsss h1 {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+*/

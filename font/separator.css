@@ -1,0 +1,10 @@
+
+.Questions{
+    margin-left: 5px; /* เพิ่มช่องว่างด้านซ้าย */
+    font-size: 12px;
+}
+
+.separator {
+    margin: 0 5px; /* ปรับขนาดระยะห่างของ separator ตามที่คุณต้องการ */
+    display: inline-block;
+}

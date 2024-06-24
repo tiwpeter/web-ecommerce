@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--------------jqury--------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--------------funtion------->
+    <script src="funtion/product.js" type="text/javascript"></script>  
+
+    <!----nagtive go category------>
+    <script src="category/funtion/createlinknew.js" type="text/javascript"></script>  
+    <!--------------funtion------->
+    <script src="funtion/product.js" type="text/javascript"></script>  
+    <script src="funtion/openoroduct.js" type="text/javascript"></script>  
+
+
+
+    <!--------------modelpage main page--------------------->
+    <link rel="stylesheet" href="ui/modelpage/product.css">
+    <!--------------font  fix-------------------->
+    <link rel="stylesheet" href="font/font.css">
+
+
+    <!--------------color------->
+    <link rel="stylesheet" href="category/gridview/color.css">
+    <!--Nav--->
+    <link rel="stylesheet" href="ui/nav/distac.css">
+    <link rel="stylesheet" href="shopkun.css">
+    <link rel="stylesheet" href="testnav.css">
+    <link rel="stylesheet" href="seah.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--distac-->
+    <link rel="stylesheet" href="ui/nav/distac.css">
+    <!--img display-->
+    <link rel="stylesheet" href="showsli/boxmain.css">
+    <link rel="stylesheet" href="showsli/boxshow1.css">
+    <link rel="stylesheet" href="showsli/boxshow2.css">
+    <!--------------foder------->
+    <link rel="stylesheet" href="ui/folderimg/foder.css">
+    <link rel="stylesheet" href="ds.css">
+    <link rel="stylesheet" href="footter.css">
+
+    <!--------------category main page--------------------->
+    <link rel="stylesheet" href="ui/category.css">
+
+        <!--------------navsase--------------------->
+        <link rel="stylesheet" href="ui/styles.css">
+        <link rel="stylesheet" href="ui/navsale.css">
+        <link rel="stylesheet" href="ui/sale.css">
+
+        <!-------foget css model------>
+        <link rel="stylesheet" href="ui/modeldetal/model.css">
+
+        <!--------------price displaynon-------------------->
+        <link rel="stylesheet" href="category/ui/productCategory/sortby.css">
+
+        <style>
+            .nonclass {
+                margin-bottom: 5px; /* ปรับลดความห่างระหว่าง div และ h3 */
+        
+            }
+        
+            .rating {
+            display: inline-block;
+            color: #faca51;
+            }
+ 
+        </style>
+</head>
+<body>
+    <!--nav-->
+    <section class="space">
+        <div class="header-container">
+            <div class="shopkun">
+                <div class="logo-text">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KtN6V_VWlz0z6ksWMhA-ym3KjX2fa2b26bPSpt3rMM-kaB8TPJW_4RaPpDVdrC_6xoU&usqp=CAU" alt="" class="image-border">
+                    <span  class="dsss"><h1>ShopKun</h1></span>
+                </div>
+            </div>
+    
+            <div class="search-bar">
+                <input type="text" placeholder="ค้นหาสินค้า...">
+                <button class="search-button">
+                    <img class="search-icon" src="icons8-search-50.png" alt="">
+                </button>
+            </div>
+
+            <div onclick="openclass()" style="margin-left: 20px;">
+                <i class="fa fa-cart-shopping" style="font-size: 24px;"></i>
+            </div>
+
+            <div>
+                <a href="#" >
+                <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB18s7ESBr0gK0jSZFnXXbRRXXa.jpg" alt=""
+                class="tag-icon"
+                style="width: 165px; height: 45px; margin-left: 20px;"
+                
+                >
+                
+            </a>
+            </div>
+        </div>
+    </section>    
+
+    <section>
+        <div class="distance">
+        </div>
+    </section>
+
+    <section>
+<div class="tone-imgmain">
+      <!--img display-->
+    <div class="sectionbox">
+        <img  src="https://img.lazcdn.com/us/domino/e0c0811f1c24d7297909913edb5a6121.jpg_2200x2200q80.jpg_.webp" 
+        alt="" 
+        class="">
+    </div>
+
+    <div class="pc-download-module">
+        <div class="cop-lasa">
+            <img class="minimig" src="https://img.lazcdn.com/us/domino/009ede16123aee019caa077c86ba4b45.png_680x680q80.png_.webp" alt="">
+            <p class="wds">TRY ShopKun APP </p>
+        </div>
+        <!--box floder-->
+        <div class="m-body">
+            <div class="score">
+                <div class="picture-wrapper star">
+                    <img src="https://img.lazcdn.com/g/tps/imgextra/i4/O1CN01cAMOjU1zqQJZU8EbT_!!6000000006765-2-tps-19-18.png_2200x2200q80.png_.webp" style="object-fit:fill">
+                    <span class="rated-txt">4.8 Rated</span>
+                </div>
+            </div>
+            <div class="enjoy-tips-wrap">
+                <span class="enjoy-tips">Get the ShopKun app to enjoy</span>
+            </div>
+
+            <div class="ls-ul">
+                <div class="ls ls-1">
+                <div class="picture-wrapper badge">
+                    <img src="https://img.lazcdn.com/g/tps/imgextra/i2/O1CN01n3PMa828kJZVuCbPp_!!6000000007970-2-tps-72-72.png_2200x2200q80.png_.webp" style="object-fit:fill">
+                </div>
+                <span class="txt">FREE SHIPPING</span>
+                </div>
+
+                <div class="ls ls-2">
+                    <div class="picture-wrapper badge">
+                        <img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01J03SMW1lebTE7xkaN_!!6000000004844-2-tps-72-72.png_2200x2200q80.png_.webp" style="object-fit:fill">
+                    </div>
+                    <span class="txt">EXCLUSIVE VOUCHERS</span>
+                </div>
+            </div>
+           
+        </div>
+
+        <!---qr-->
+        <div class="m-footer">
+        <div class="content">
+            <div class="qr-code-wrap">
+                <div class="picture-wrapper">
+                    <img src="https://img.lazcdn.com/us/domino/ae0097cdb1eceff6a1c6c8e67b5c09f7.png_2200x2200q80.png_.webp" alt="">
+                </div>
+                
+            </div>
+            <div class="download-btn">
+                <img src="https://img.lazcdn.com/g/tps/imgextra/i4/O1CN01uAl8kB1wEv2DNjdhB_!!6000000006277-2-tps-125-36.png" alt="" class="btn1">
+                <img src="https://img.lazcdn.com/g/tps/imgextra/i1/O1CN01QJGFfc1S0mKngu4rQ_!!6000000002185-2-tps-125-36.png" alt="" class="btn2">
+            </div>
+        </div>
+                <div>
+                    <span class="download-tips">Download the app now by scanning the QR code</span>
+                </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+</section>
+
+<!---------navsale---->
+<main>
+        
+    <section class="N">
+        <div class="icon-LazF">
+                <div class="box-icon">
+                    <img class="icon-Laz" src="https://img.lazcdn.com/us/domino/b91bbd59-54e7-47e6-96aa-21d17deceda1_TH-240-36.png_2200x2200q80.png_.webp" alt="">
+                    <span><h5>LazMall</h5></span>
+                </div>
+                <div class="box-icon">
+                    <img class="icon-Laz" src="https://img.lazcdn.com/us/domino/d682a139-c8d5-4082-8b08-a7623fd117d3_TH-240-36.png_2200x2200q80.png_.webp" alt="">
+                    <span><h5>Youcher</h5></span>
+                </div>
+                <div class="box-icon">
+                    <img class="icon-Laz" src=" https://img.lazcdn.com/us/domino/f6f50d22f023e55215fbb3db0eddcbfd.png_2200x2200q80.png_.webp " alt="">
+                    <span><h5>Travel</h5></span>
+                </div>
+                <div class="box-icon">
+                    <img class="icon-Laz" src=" https://img.lazcdn.com/us/domino/b8fbdde3-0483-4c0d-a837-eca3dbe6bdcc_TH-240-36.jpg_2200x2200q80.jpg_.webp  " alt="">
+                    <span><h5>Tapup</h5></span>
+                </div>
+        </div>
+        
+
+        <div class="dwss">
+            <h1 class="dwss">Flash Sale</h1>
+        </div>
+        <div class="sle">
+            <div class="sale">
+                <div class="o">
+                    <div class="o1">
+                        <p>On Sale Now </p> 
+                    </div>
+                    <div class="o2"> 
+                        <div class="up">
+                            <div class="o1">
+                                <p>Ending in  </p> 
+                            </div>
+                                 <div class="tag-sale "> 19 </div> 
+                                 <div class="m"> :</div> 
+                                 <div class="tag-sale "> 59 </div> 
+                                 <div class="m"> :</div> 
+                                 <div class="tag-sale "> 19 </div> 
+
+
+                         </div>
+                    </div>
+                    
+                    <button class="buton-Shop">Shop all product</button>
+
+                </div>
+
+                
+                
+            </div>
+            <section class="product" id="product-container">
+         
+            </section>
+
+            <!--category-->
+            <div class="dwss"><h1>Categories</h1></div>
+            <section class="wsss" id="categoryHeading" style="display: flex;flex-wrap: wrap;">
+            </section>
+    </section>
+    <!--Product  -->
+      
+
+   
+    
+</main>
+
+<!--แสดงก็ตัวเมื่อคลิก model-->
+
+<div id="modal-ID" class="modal"  style="display: none;"> <!---->
+    <div class="modal-bg"></div>
+    <div class="modal-page" >
+       <h2>detail</h2>
+       <div class="modal-content">
+        <div>
+           <img id="mdd-img" class="modal-img"   src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlrZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <div>
+                <img class="img-mini"  id="mdd-imgsecond" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlrZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+        </div>
+           <div  class="modal-detell">
+            <p id="mdd-name" style="font-size: 1.7vw;">โทรศัพท์ OPPQ A57 5g smartphone</p>
+
+            <div class="flex">
+                <div class="gas">
+                    <div id="mdd-rating"></div>
+                </div>
+            
+                <div class="flex75">
+                    <div style="color: blue; " class="Questions">
+                        5 Ratings 
+                    </div>
+                  
+                </div>
+            </div>
+            
+            <!---wen-->
+            <div class="w">
+                <img class="icon-miniS" src="./icon/share.png" alt="">
+                <img class="icon-miniM" src="./icon/heart.png" alt="">
+            </div>
+        
+            <div class="bwsa">
+                <div style="color: #999; " class="Questions" >
+                    Brand: 
+                </div>
+                <div style="color: blue; " class="Questions" >
+                    CKML
+                </div>
+                <div class="Questions" >
+                    |
+                </div>
+                <div style="color: blue; " class="Questions" >
+                    More Computer Accessories from CKML
+                </div>
+            </div>
+        
+            <!---wen-->
+            <div class="w">
+                <img class="icon-miniS" src="./icon/share.png" alt="">
+                <img class="icon-miniM" src="./icon/heart.png" alt="">
+            </div>
+        
+            <div class="price-flex">
+                <p id="mdd-price" style="color: red; font-size: 2.2vw;margin-top: 5px;">฿500</p>
+                <div class="price-flex1">
+                <span class="original-price">฿1,700</span>
+                <span class="discount">-57%</span>
+            </div>
+            </div>
+        
+                <!---wen-->
+                <div class="w">
+                    <img class="icon-miniS" src="./icon/share.png" alt="">
+                    <img class="icon-miniM" src="./icon/heart.png" alt="">
+                </div>
+                
+               <p id="mdd-desc" style="color: darkgreen;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est cupiditate, consequatur impedit nesciunt, dolorum saepe facere veritatis recusandae, harum ex! Culpa recusandae nihil eos deserunt, modi molestias earum est.
+                <div class="flex-down">
+        
+                <!---wen-->
+                <div class="wen">
+                    <img class="icon-miniS" src="./icon/share.png" alt="">
+                    <img class="icon-miniM" src="./icon/heart.png" alt="">
+                </div>
+        
+                <div class="down">
+                    <div class="qurt" style="color: blue; ">
+                        <h5>Quantity</h5>
+                    </div>
+                    <div  class="quantity-control">
+                        <button  class="btn" onclick="decreaseQuantity()">-</button>
+                        <input type="text" id="quantity" value="1" readonly="" style="border: none;text-align: center;width: 40px;">
+                        <button class="btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+           </p>    
+                   <div class="bb-contrel">
+                       <button onclick="closeModal()" class="btn">
+                           close
+                       </button>
+                       <button onclick="addcart() "class="btn btn-buy">
+                           add to cart
+                       </button>
+                       <!-- บรรทัดใหม่ Easy  40.20 ยังไม่แก้ตัวสินค้า-->
+           </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+    <!--foot-->
+    <section class="new-desktop-footer " data-config="{}">
+	
+        <div class="footer-first">
+            <div class="lzd-footer-inner" data-spm="footer_top">
+                <div class="lzd-footer-width-25">
+                    <h3 class="footer-title">Customer Care</h3>
+                    <ul class="footer-list">
+                        
+                            <li class="footer-li"><a href="//www.lazada.co.th/helpcenter/">Help Center</a></li>
+                        
+                            <li class="footer-li"><a href="//www.lazada.co.th/helpcenter/orders/">How to Buy</a></li>
+                        
+                            <li class="footer-li"><a href="//www.lazada.co.th/helpcenter/shipping-and-delivery/">Shipping &amp; Delivery</a></li>
+                        
+                            <li class="footer-li"><a href="//www.lazada.co.th/helpcenter/products-on-lazada/#answer-faq-internationalproduct-ans">International Product Policy</a></li>
+                        
+                            <li class="footer-li"><a href="//www.lazada.co.th/helpcenter/returns-refunds/#answer-faq-return-ans">How to Return</a></li>
+                        
+                            <li class="footer-li"><a href="//www.lazada.co.th/contact/">Contact Us</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="lzd-footer-width-25">
+                    <h3 class="footer-title">ShopKun</h3>
+                    <ul class="footer-list">
+                        
+                            <li class="footer-li">
+                            
+                                <a href="//group.lazada.com/en/about/">About ShopKun</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="//www.lazada.co.th/affiliate/">Afﬁliate Program</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="//www.lazada.com/work-at-lazada/">Careers</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="https://pages.lazada.co.th/wow/gcp/route/lazada/th/upr_1000345_lazada/channel/th/upr-router/th?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/th/central/TermsandConditions">Terms &amp; Conditions</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="https://pages.lazada.co.th/wow/gcp/route/lazada/th/upr_1000345_lazada/channel/th/upr-router/th?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/th/legal/nFQ6ycyNJx">Privacy Policy</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="//group.lazada.com/en/press-release/">Press &amp; Media</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="//www.lazada.co.th/security/">Security</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="//www.lazada.co.th/popular-product/">Popular Products</a>
+                            
+                            </li>
+                        
+                            <li class="footer-li">
+                            
+                                <a href="https://pages.lazada.co.th/wow/gcp/route/lazada/th/upr_1000345_lazada/channel/th/upr-router/th?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/th/legal/ipr-policy">Intellectual Property Protection</a>
+                            
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="lzd-footer-width-50">
+                    
+                        
+                        <div class="lzd-footer-app-downloads">
+                            
+                                    
+                            
+                            <div class="lzd-footer-appIcon pull-left logo icon-logo-lazada-footer">
+                        </div>
+                        <div class="pull-left lzd-app-download-text">
+                            <div class="title">Always Better</div>
+                            <div class="text">Download the App</div>
+                        </div>
+                        <div class="pull-left" style="width: 290px">
+                            <a class="lzd-footer-sprit pull-left icon-appStore-footer icon-appstore-footer" data-spm-click="gostr=/lzdpub.footer.top;locaid=app_store" href="https://bit.ly/lazada-ios-app"></a>
+                            <a class="lzd-footer-sprit pull-left icon-android-footer icon-appstore-footer" data-spm-click="gostr=/lzdpub.footer.top;locaid=android" href="https://bit.ly/lazada-android-app"></a>
+                            <a class="pull-left icon-huawei-footer" data-spm-click="gostr=/lzdpub.footer.top;locaid=huawei" href="https://appgallery.huawei.com/#/app/C100164557"></a>
+                        </div>
+                        </div>
+                        <div class="clear"></div>
+                        
+                    
+                </div>
+            </div>
+      
+        </div>
+    
+    <div class="footer-second"><div class="lzd-footer-inner">
+
+        </div>
+    
+    </section>
+
+</body>
+</html>

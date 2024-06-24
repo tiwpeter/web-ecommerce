@@ -1,0 +1,23 @@
+.tone-imgmain{
+    width: 100%;
+    height: 344px;
+    background-color: #f0f0f0;
+    display: flex;
+
+    justify-content: center; /* จัดให้เนื้อหาอยู่กึ่งกลางแนวนอน */
+    align-items: center; /* จัดให้เนื้อหาอยู่กึ่งกลางแนวตั้ง */
+}
+
+.sectionbox {
+    display: flex;
+    justify-content: center; /* จัดให้ภายในตรงกลางตามแนวแกน X */
+    align-items: center; /* จัดให้ภายในตรงกลางตามแนวแกน Y */
+    height: 100%; /* ใช้ส่วนความสูง*/
+    width: 1007px;
+}
+
+.sectionbox img{
+    width: 100%;
+    height: 344px;
+}
+

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidebar กึ่งกลาง</title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!---------------cateproduct------------------------>
+<link rel="stylesheet" href="category/ui/productCategory/cateproduct.css">
+
+
+
+
+<!-------------------------------------old-->
+
+<!--- container category--->
+<link rel="stylesheet" href="test.css">
+
+<!--------------price displaynon-------------------->
+<link rel="stylesheet" href="category/ui/productCategory/sortby.css">
+
+
+<!--------------nav-->
+<link rel="stylesheet" href="ui/nav/nav.css">
+<link rel="stylesheet" href="ui/nav/distac.css">
+
+
+
+<!--------------gridview use new test-------------------->
+<link rel="stylesheet" href="productCategory/cateproduct.css">
+
+
+<!----------- tickflex box
+-->
+<link rel="stylesheet" href="category/box-container.css">
+
+
+<!---font----->
+<link rel="stylesheet" href="font/font.css">
+<link rel="stylesheet" href="font/separator.css">
+
+
+<!----pagecategory boxtick-->
+<link rel="stylesheet" href="category/tick.css">
+
+
+ <!---search rating------>
+ <link rel="stylesheet" href="category/search/rating.css">
+<link rel="stylesheet" href="category/search/search.css">
+
+
+<!--------sort css gird css------>
+<link rel="stylesheet" href="category/ui/sorttick/sort.css">
+
+<!------playicon----->
+<link rel="stylesheet" href="category/gridview/playicon.css">
+
+<!--------section grid------>
+
+<link rel="stylesheet" href="category/gridview/test.css">
+<link rel="stylesheet" href="category/gridview/color.css">
+<script src="category/gridview/gridview.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-----funtion------>
+<script src="category/funtion/tickbox.js"></script>
+<script src="category/funtion/showproduct2.js"></script>
+
+<!-----product color------>
+
+    <!--Nav--->
+    <link rel="stylesheet" href="ui/nav/distac.css">
+    <link rel="stylesheet" href="shopkun.css">
+    <link rel="stylesheet" href="testnav.css">
+    <link rel="stylesheet" href="seah.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+ <!--procuct--->
+ <link rel="stylesheet" href="category/container.css">
+ <link rel="stylesheet" href="category/gridview/sort.css">
+ <style>
+    
+    .grid-view .product-item{
+        display: flex;
+    }
+
+    .list-view .product-item {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px 0;
+        height:283px;
+    }
+    .list-view .list1 {
+        display: flex;
+    }
+
+    .list-view .list {
+        margin-left : 15px;
+    }
+    .grid-view .list1 {
+        display: block; /* or inline-block if needed */
+    }
+
+    .list-view .price-container{
+            width: 560px;
+        }
+
+    .list-view .price-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        text-align: right;
+        margin-left: 56px;
+    }
+    .list-view .catetitle {
+        width: 448px;
+        height: 54px;
+    }
+    .sold{
+        display: flex;
+    }
+    
+    .list-view .price-cate{
+        margin-top:-30px;
+    }
+
+    .wenbo{
+        width: 1188px;
+        height: 48px;
+        border-bottom: 1px solid #EFF0F5;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+    .breadcrumb_item_anchor {
+        display: inline-block;
+        vertical-align: middle;
+        color: #1a9cb7;
+        padding: 0 4px;
+        font-size: 14px;
+        font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+        max-width: 200px;
+        white-space: nowrap;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+    .breadcrumb_item_text {
+            vertical-align: middle;
+            padding: 0;
+            margin: 0;
+            line-height: 100%;
+            display: inline-block;
+            font-weight: 300;
+            }
+            .breadcrumb_item {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: 300;
+  height: 48px;
+}        
+
+.breadcrumb_right_arrow {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACKUExURUxpcYGBgYGBgYWFhYCAgICAgICAgIKCgv///4GBgZWVlYyMjIGBgYCAgIKCgoGBgYGBgaqqqoODg7+/v4GBgZKSko6OjoGBgYWFhYGBgYSEhIGBgZmZmYCAgIGBgYGBgYCAgICAgIGBgYCAgICAgIiIiICAgIeHh4GBgYSEhIODg4GBgYGBgYCAgPLijmAAAAAtdFJOUwCS7jCDi/E1AbYMFJrrK9ToAycEugcJtBfYG64Fp+S+vb+god0e4SLcHyPgwPJLUkAAAAB6SURBVDjLY2AYYoCdkwu/AgVdHTG8Crj5dUVE8aqQkNQVl8GrQkpDV1oYrwpVbV1ZQbwq1OV0lTnwqhAS0OXBr4KPV5cRf3AwM+myEghRNl0WihQQsoKQIwl5U0tOVwmfvKYa/qCWUsEfWYSim2CCkddVFKMs0Q5aAABM4wlSQJ87yAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.breadcrumb_item_anchor {
+    text-decoration: none; /* เอาการตกแต่งขีดล่างออก */
+}
+
+
+.grid-view .ab {
+        display: flex;
+    }
+
+</style>
+</head>
+<body>
+        <!--nav-->
+        <section class="space">
+            <div class="header-container">
+                <div class="shopkun">
+                    <div class="logo-text">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KtN6V_VWlz0z6ksWMhA-ym3KjX2fa2b26bPSpt3rMM-kaB8TPJW_4RaPpDVdrC_6xoU&usqp=CAU" alt="" class="image-border">
+                        <span  class="dsss"><h1>ShopKun</h1></span>
+                    </div>
+                </div>
+        
+                <div class="search-bar">
+                    <input type="text" placeholder="ค้นหาสินค้า...">
+                    <button class="search-button">
+                        <img class="search-icon" src="icons8-search-50.png" alt="">
+                    </button>
+                </div>
+      
+                <div onclick="openclass()" style="margin-left: 20px;">
+                    <i class="fa fa-cart-shopping" style="font-size: 24px;"></i>
+                </div>
+      
+                <div>
+                    <a href="#" >
+                    <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB18s7ESBr0gK0jSZFnXXbRRXXa.jpg" alt=""
+                    class="tag-icon"
+                    style="width: 165px; height: 45px; margin-left: 20px;"
+                    
+                    >
+                    
+                </a>
+                </div>
+            </div>
+        </section>    
+      
+        <section>
+            <div class="distance">
+                
+            </div>
+        </section>
+        <!--nav anddictan-->
+
+        <main>
+            <div class="wenbo" style="align-items: center;display: flex;">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb_item">
+                        <span class="breadcrumb_item_text">
+                            <a href="www." class="breadcrumb_item_anchor" title="Home">
+                                <span>Home</span>
+                            </a>
+                            <div class="breadcrumb_right_arrow">
+
+                            </div>
+                        </span>
+                        <span class="breadcrumb_item_text">
+                            <a href="www." class="breadcrumb_item_anchor" title="Home">
+                                <span>Mobiles & Tablets</span>
+                            </a>
+                            <div class="breadcrumb_right_arrow">
+
+                            </div>
+                        </span>
+                        <span class="breadcrumb_item_text">
+                            <a href="www." class="breadcrumb_item_anchor" title="Home">
+                                <span>Smartphones</span>
+                            </a>
+
+                            </div>
+                        </span>
+                        
+                        
+                    </li>
+                </ul>
+            </div>
+            <!--wen border-->
+            <div class="container">
+              <div class="sidebar">
+                
+          
+          
+          
+                <div style="font-size: 8px;color: #212121;">
+                  <h4>Category</h4>
+                    <div style="margin-top: 10px;padding-bottom: 20px;">
+                        <div>
+                            <h4 class="fmaly">Moblie</h4>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-top: 1px solid #ececec;padding-top: 16px;">
+                    <h4 style="font-size: 15px;">Brand</h4>
+                </div>
+              
+          
+          
+                <!----------box category--------------->
+                <div class="boxing">
+                  <div id="uibox"></div>
+                </div>
+          
+                <h4 class=" viewmore">view more</h3 >
+          
+                <div id="categories"></div>
+          
+          
+          
+          
+          
+          
+          
+          
+            <!-----------------serah-->
+                  <h5>Price</h5>
+            <div class="search">
+              <input type="number" placeholder="ราคาต่ำสุด">
+              <input type="number" placeholder="ราคาสูงสุด">
+                  <!-- ใช้ class play-icon แทนที่จะเป็น button -->
+                  <button class="play-icon"></button>
+          </div>
+          
+          
+          
+          
+              <!-----------------rating-->
+              <h5>Rating</h5>
+                <div class="rating">
+                  <div class="rat">
+                    <div class="flex">
+                        <div class="starraing">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                        </div>
+                        <div class="starraing">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                        </div>
+                        <div class="starraing">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                        </div>
+                        <div class="starraing">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                        </div>
+                        <div class="starraing">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                        </div>
+                    </div>
+          
+                    <div class="flex">
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                    </div>
+          
+                    <div class="flex">
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                    </div>
+          
+                    <div class="flex">
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                    </div>
+          
+                    <div class="flex">
+                      <div class="starraing">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfakAPelAPakAPekAPakAPelAPalAEdwTP+vAPiuAPakAPqoAPalAPalAPelAP/WAP/TAP/MAP/PAP/bAPq1APy/AP7HAGxqCN8AAAAPdFJOU/5Lu2byeuMADP2nIMmTOjbD1MQAAAD7SURBVCjPhdNbkoMgEAXQq4KhAZWn+1/qAFFjk5TTH1pwuIoIeD0WeFPJR5ZCPbASkA8sQTzOWM3keBw8HGJicfBwjIHF7zzBx8jj6MJxY/HGZpiWcQb8VjwShNVyWlXjpfSXopT3rZXLKVHtErPBS1kk77a+wg5M9eFqRP7SzVHR9u7qrqtAGM6pffuhx4c1D8GFAuUeTr2+WyOHqzyJoVsWkW58rczJ6p4OWDpekf2nyHY8YW/wvibR8YLanQmpDkgwnEfye8FZowzYM7qZi1SxLKNpA86pH2zqD5LvfbCOpaEZDxDLZ5OsFpax1Ibt6GH+eUr+OWN9/QE2YB+QdE4J4wAAAABJRU5ErkJggg==" alt="">
+                      </div>
+                    </div>
+                
+                </div>
+                </div>
+                
+              </div>
+          
+              <!------------magin------------------->
+            
+              <div class="main-content">
+                
+                <h2>Main Content</h2>
+                <main>
+                  <div style="float: left;">
+                    <h5 class="gray">Showing results for Outdoor Lighting</h5>
+                  </div>
+                  <div style="float: right;">
+                    <!------config center-------->
+                    <div class="configcenter">
+                      <!-------------->
+                        <div class="sortBy">
+                          <h5>Sort By:</h5>
+                        </div>
+                        <div class="select">
+                          <select id="sortSelect" class="ant-select-selection-item" onchange="sortProducts()">
+                            <option value="default">เรียงตามค่าเริ่มต้น</option>
+                            <option value="price-asc">ราคาต่ำสุด</option>
+                            <option value="price-desc">ราคาสูงสุด</option>
+                          </select>
+                        </div>
+                      
+          
+                      
+          
+                      <div class="i9TkI">
+                        View:
+                      </div>
+          
+                      <div class="view-options">
+                        <div style="display: flex;">
+                          <button onclick="setView('grid')"><i class="fas fa-th-large"></i></button>
+                          <button onclick="setView('list')"><i class="fas fa-list"></i></button>
+                        </div>
+                      </div>
+                       <!-------------->
+                    </div>
+                    <!-------------->
+                  </div>
+                  <div style="clear: both;"></div> <!-- เพื่อให้ main ไม่เกิดปัญหาการจัดวาง -->
+          
+          
+                </main>
+<!-----------Main Content------------------>
+    
+    <!--wen-->
+      <div class="_17mcb">
+
+      <!--product girdveiw-->
+      <section >
+        <!--grid-->
+        <div id="productList" class="productcate grid-view">
+            <div class="ab" id="productContainer">
+
+            </div>
+         </div>
+        
+       
+        <!-- Repeat other product items as necessary -->
+    </section>
+
+</body>
+</html>

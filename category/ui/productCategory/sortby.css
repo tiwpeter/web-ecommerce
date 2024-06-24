@@ -1,0 +1,49 @@
+.flex {
+    display: flex;
+}
+
+.bwsa{
+
+  display: flex;
+  margin-top: 4px;
+  gap: 6px;
+
+}
+
+.gas{
+    gap: 10px;
+    display: flex;
+    margin-right: 10px;
+}
+/*
+.main-content {
+    flex: 1;
+    padding: 20px;
+}*/
+
+.price-flex1 {
+    display: flex;
+    align-items: center; /* จัดตำแหน่งให้อยู่กึ่งกลางในแนวตั้ง */
+  /*  z-index: 1;  ให้ส่วนนี้แสดงอยู่ด้านบนของส่วนอื่น */
+}
+
+
+
+.flexmargin {
+    display: flex;
+}
+
+
+.flex75 {
+    display: flex;
+    margin-top: 4px;
+  }
+
+
+.down{display: flex;
+    align-items: center;
+}
+.qurt{
+    margin-top: 10px;
+    margin-right:10px;
+}

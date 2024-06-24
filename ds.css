@@ -1,0 +1,68 @@
+.new-desktop-footer {
+    font-size: 12px;
+    font-weight: 200;
+    left: 0;
+    min-width: 1188px;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+.footer-first {
+  background-color: #f4f4f6;
+    color: #fff;
+    padding: 20px 0 25px;
+  }  
+.lzd-footer-inner {
+  margin: 0 auto;
+    overflow: hidden;
+    width: 1188px;
+  }
+.lzd-footer-width-25 {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+  }
+.footer-title {
+    color: #0f136d;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 0;
+  }
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+  }
+
+.footer-li {
+    font-weight: 200;
+    line-height: 17px;
+    list-style: none;
+  }
+
+.lzd-footer-width-25 {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+  }
+
+.footer-title {
+    color: #0f136d;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 0;
+  }
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+  }
+
+.footer-li {
+    font-weight: 200;
+    line-height: 17px;
+    list-style: none;
+  }

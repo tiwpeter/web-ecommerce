@@ -1,0 +1,29 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* เพิ่มระยะห่างระหว่างสินค้า */
+   /* justify-content: center;*/
+    
+}
+
+
+.product-item {
+    background-color: #fff;    ;
+    border: 2px solid #f0f0f0;/* ปรับขอบเป็น solid และเพิ่มขนาดขอบเพื่อให้สินค้ามีเส้นขอบ */
+    width: 177px;
+    height: 300px;
+    display: flex; /* เพิ่ม display เพื่อให้เรียงส่วนของสินค้าในแนวนอน */
+    flex-direction: column; /* การเรียงคอลัม */
+    justify-content: space-between; /* จัดเรียงให้ส่วนบนและส่วนล่างของสินค้าอยู่ที่สองข้าง */
+    padding: 10px; /* เพิ่ม padding เพื่อมีพื้นที่ในตัวของสินค้า */
+}
+.product-item img {
+    width: 188px;
+    height: 188px;
+}
+/*
+h1 {
+    text-align: left; 
+    margin-left: 180px; 
+}
+*/

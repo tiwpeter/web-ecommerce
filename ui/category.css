@@ -1,0 +1,47 @@
+.category {
+    justify-content: center;
+
+        margin-left: 0px;
+        margin-right: 167px; /* เพิ่มระยะห่างทางซ้าย */
+
+     /* เพิ่ม flex-wrap 
+    flex-direction: row;
+    เพื่อให้สินค้าอยู่ในแนวเรียงแถวเดียว */
+    /* เปลี่ยน flex-direction เป็นแนวเรียงแถวเดียว */
+}
+
+.wsss{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+.category-item {
+    /* เพิ่ม Flexbox เพื่อจัดเรียงข้อความและรูปภาพตามต้องการ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* จัดให้รูปภาพและข้อความตรงกลางตามแนวแกนตั้ง */
+    background-color: #fff;
+    border: 2px solid #f0f0f0;
+    width: 131.5px;
+    height: 147.5px;
+    padding: 10px;
+    /* justify-content: center; ไม่จำเป็นต้องใช้งานที่นี่ */
+}
+
+a {
+    text-decoration: none; /* เอาการขีดเส้นทั้งหมดออก */
+    color: inherit; /* ใช้สีของข้อความเหมือนกับข้อความปกติ */
+}
+
+a:hover {
+    text-decoration: underline; /* ถ้าต้องการให้ขีดเส้นเมื่อเม้าส์ไปชี้ */
+}
+
+.category-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
