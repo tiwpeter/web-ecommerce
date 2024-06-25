@@ -17,7 +17,7 @@ $(document).ready(function() {
                 // data-category =  data in  category
 
                 // แสดง URL ของรูปภาพใน console
-                console.log("Category Image URL:", categoryIMG);
+                //console.log("Category Image URL:", categoryIMG);
 
                 categoriesHtml += `
                 <div 
