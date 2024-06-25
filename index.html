@@ -22,6 +22,10 @@
 <!--------------add count------->
 
 
+        <!--------------buynow-------------------->
+        <link rel="stylesheet" href="funtion/buy/buynow.js">
+
+
 
     <!--------------modelpage main page--------------------->
     <link rel="stylesheet" href="ui/modelpage/product.css">
@@ -61,6 +65,7 @@
 
         <!--------------price displaynon-------------------->
         <link rel="stylesheet" href="category/ui/productCategory/sortby.css">
+
 
         <style>
             .nonclass {
@@ -382,12 +387,12 @@
 <!--แสดงก็ตัวเมื่อคลิก model-->
 
 <!--cert bring funtion for opencart.js put and display with #modalCart-->
-<div id="modalCart" class="modal"  >
+<div id="modalCart" class="modal" style="display:none;" >
     <div class="modal-bg"></div>
-    <div class="modal-page">
+    <div class="modal-page" >
         <h2> My cart </h2>
         <br>
-        <div id="mycart" class="cartlist">
+        <div id="mycart" class="cartlist" >
             
             <div class="cartlist-item" >
                 
@@ -409,16 +414,16 @@
             
             </div>
 
-            <div class="carlist-right" style="display: flex;align-items: center;justify-content: flex-end;">
-                <p style="margin-right: 162px;">Total :</p>
-                <p style="color: #f57224;">700</p>
+            <div class="carlist-right" style="display: flex; align-items: center; justify-content: flex-end;">
+                <p style="margin-right: 10px; font-weight: bold;">Total:</p>
+                <p style="color: #f57224; font-weight: bold;" id="totalPrice">0</p>
             </div>
         </div>
         <div class="bb-contrel">
             <button onclick="closeModal()" class="btn">
                 cancel
             </button>
-            <button class="btn btn-buy">
+            <button class="btn btn-buy" onclick="buynow()">
                 Buy Now
             </button>
         </div>

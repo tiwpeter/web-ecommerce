@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<button onclick="adjustQuantity(this, '+')">+</button>
+<span id="quantity">0</span>
+<button onclick="adjustQuantity(this, '-')">-</button>
+
+
+
+<script>
+// JavaScript
+function adjustQuantity(button, operation) {
+    // หาค่าปัจจุบันของจำนวนสินค้า
+    var quantityElement = document.getElementById('quantity');
+    var currentQuantity = parseInt(quantityElement.textContent);
+
+    // ตรวจสอบว่าจะเพิ่มหรือลดจำนวนสินค้า
+    if (operation === '+') {
+        currentQuantity++;
+    } else if (operation === '-') {
+        if (currentQuantity > 0) {
+            currentQuantity--;
+        } else {
+            return; // ไม่สามารถลดได้เมื่อค่าเป็นศูนย์
+        }
+    }
+
+    // อัพเดตจำนวนสินค้าที่แสดง
+    quantityElement.textContent = currentQuantity;
+}
+</script>
+</body>
+</html>

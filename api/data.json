@@ -16,6 +16,7 @@
           "sale": 50,
           "reviews": 1000,
           "soldout": 1700,
+          "comment": 173,
           "imageUrl": "https://img.lazcdn.com/g/p/42ee1733b303f73007eaa36bd1633d97.jpg_170x170q80.jpg_.webp",
           "imgsecond": "https://img.lazcdn.com/g/p/4423f532d41a371e4dd57a4e277439c2.jpg_200x200q80.jpg_.webp"
         },
@@ -41,180 +42,14 @@
           "sale": 11,
           "reviews": 1031,
           "soldout": 1700,
+          "comment": 1200,
           "imageUrl": "https://img.lazcdn.com/g/p/4fd82e3488b7406d901a068fffb14b0d.jpg_200x200q90.jpg_.webp",
           "imgsecond": "https://img.lazcdn.com/g/p/c9e5bf1ebd2daf7c8a761af94767e1ac.jpg_80x80q90.jpg_.webp"
         }
       ]
-    },
-    {
-      "id": 2,
-      "name": "Outdoor Lighting",
-      "img": "https://img.lazcdn.com/g/p/37d22c5d553c8e0e0f599dca993b9f6a.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers",
-      "products": [
-        {
-          "id": 201,
-          "name": "Xiaomi YouPin Official Store พัดลม พัดลมมือถือพัดลมแบตเตอรี่แบบพกพาขนาดเล็กพัดลมมือถือความเร็วสูงความรุนแรง USB พัดลม",
-          "brand": "Xiaomi",
-          "price": 239.00,
-          "stock": 150,
-          "rating": 4,
-          "sale": 52,
-          "reviews": 1000,
-          "soldout": 1700,
-          "imageUrl": "https://img.lazcdn.com/g/p/c3e66a5aa34ca6977413835df37f4c62.png_400x400q80.png_.webp",
-          "imgsecond": "https://img.lazcdn.com/g/p/4423f532d41a371e4dd57a4e277439c2.jpg_200x200q80.jpg_.webp"
-        },
-        {
-          "id": 202,
-          "name": "เสื้อยืดคอกลมแฟชั่นunisex เสื้อยอดฮิตลาย เสื้อแขนสั้นD68",
-          "brand": "Xiaomi",
-          "price": 19.00,
-          "stock": 150,
-          "rating": 5,
-          "sale": 72,
-          "reviews": 217,
-          "soldout": 1700,
-          "imageUrl": "https://img.lazcdn.com/g/p/6bff5d8ee21cb5282ca170071d5831f1.jpg_200x200q80.jpg_.webp",
-          "imgsecond": "https://img.lazcdn.com/g/p/4423f532d41a371e4dd57a4e277439c2.jpg_200x200q80.jpg_.webp"
-        },{
-          "id": 203,
-          "name": "ซื้อ1แถม1ฟรี!!! สินค้าพร้อมจัดส่ง เพิ่มลงรายการที่ชอบได้เลยค่ะน้ำหอม COOC COCOSILIYA EAU DE PARFUM น้ำหอมแฟชั่น（  50MLX50ML) น้ำหอมยอดฮิต",
-          "brand": "Xiaomi",
-          "price": 37.00,
-          "stock": 150,
-          "rating": 5,
-          "sale": 77,
-          "reviews": 2204,
-          "soldout": 1700,
-          "imageUrl": "https://img.lazcdn.com/g/p/4e3dfe5f93e80d0ef241a1ad21782287.png_200x200q80.png_.webp",
-          "imgsecond": "https://img.lazcdn.com/g/p/4423f532d41a371e4dd57a4e277439c2.jpg_200x200q80.jpg_.webp"
-        },
-        {
-          "id": 204,
-          "name": "เสื้อฮู้ดลาย เสื้อแจ็คเก็ต เสื้อกันหนาว เสื้อคลุมหนาวแขนยาว+หมวกน่ารักแฟชั่นสไตล์เกาหลีขายดีสุด !!L293",
-          "brand": "Xiaomi",
-          "price": 49.00,
-          "stock": 150,
-          "rating": 5,
-          "sale": 67,
-          "reviews": 902,
-          "soldout": 1700,
-          "imageUrl": "https://img.lazcdn.com/g/p/b19b99b8a89420b47413808199a9b861.jpg_200x200q80.jpg_.webp",
-          "imgsecond": "https://img.lazcdn.com/g/p/4423f532d41a371e4dd57a4e277439c2.jpg_200x200q80.jpg_.webp"
-        },{
-          "id": 205,
-          "name": "เสื้อฮู้ดลาย เสื้อแจ็คเก็ต เสื้อกันหนาว เสื้อคลุมหนาวแขนยาว+หมวกน่ารักแฟชั่นสไตล์เกาหลีขายดีสุด !!L293",
-          "brand": "Xiaomi",
-          "price": 49.00,
-          "stock": 150,
-          "rating": 5,
-          "sale": 67,
-          "reviews": 902,
-          "soldout": 1700,
-          "imageUrl": "https://img.lazcdn.com/g/p/b19b99b8a89420b47413808199a9b861.jpg_200x200q80.jpg_.webp",
-          "imgsecond": "https://img.lazcdn.com/g/p/4423f532d41a371e4dd57a4e277439c2.jpg_200x200q80.jpg_.webp"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Outdoor Lighting",
-      "img": "https://img.lazcdn.com/g/p/25130ab49265e684002f5bc523fff3be.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 4,
-      "name": "Phone Cables & Converters",
-      "img": "https://img.lazcdn.com/g/p/7e7d6158076c5f3cde3eb593b6978d00.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 5,
-      "name": "Storage Bins & Baskets",
-      "img": "https://img.lazcdn.com/g/p/4e44a93645177a0c578babab0e543faf.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 6,
-      "name": "Plant, Seeds and Bulbs",
-      "img": "https://img.lazcdn.com/g/p/1af170a322da268241223ae841b47cf3.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 7,
-      "name": "Electrical Batteries",
-      "img": "https://img.lazcdn.com/g/p/311712fd0b1e8e07afc1a6d6a6832f95.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 8,
-      "name": "LED Bulbs",
-      "img": "https://img.lazcdn.com/g/p/d73b7259f4b141f83bbaed13a226d388.png_170x170q80.png_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 9,
-      "name": "Christmas Ornaments & Models",
-      "img": "https://img.lazcdn.com/g/p/d1e80d134bbe9164d6bae87cf6e08aca.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 10,
-      "name": "Tablets",
-      "img": "https://img.lazcdn.com/g/p/2e543babd8e337202cadee19f7da03c3.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 11,
-      "name": "Tents",
-      "img": "https://img.lazcdn.com/g/p/c0b4404ec53ec70b61c734954e0242f7.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id":12 ,
-      "name": "Monitors",
-      "img": "https://img.lazcdn.com/g/p/edaf02791650384d341b69f7014db244.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 13,
-      "name": "Monitors",
-      "img": "https://img.lazcdn.com/g/p/65e3fe2dab500744b40f8c5700cf50cb.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 14,
-      "name": "Wireless and Bluetooth Speakers",
-      "img": "https://img.lazcdn.com/g/p/65e3fe2dab500744b40f8c5700cf50cb.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 15,
-      "name": "Power Banks",
-      "img": "https://img.lazcdn.com/g/p/c9ae1c10de98f66f3bd4fc24a9447b3c.png_170x170q80.png_.webp",
-      "description": "Portable computers"
-
-    },
-    {
-      "id": 16,
-      "name": "Mobile Phone Cases",
-      "img": "https://img.lazcdn.com/live/th/p/3ab5861c81e7ae545542be09fe4848ae.jpg_170x170q80.jpg_.webp",
-      "description": "Portable computers"
-
     }
+   
+
     
   ]
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .product-desc {
+            color: #666;
+            margin-top: 5px;
+        }
+        .product-price {
+            margin-top: 5px;
+        }
+        .quantity-controls {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="product-list"></div>
+
+<script>
+    $(document).ready(function() {
+        var product = [
+            { id: 1, title: 'Product 1', price: 20, count: 1 },
+            { id: 2, title: 'Product 2', price: 30, count: 1 }
+            // Add more products as needed
+        ];
+
+        //<div id="product-list"></div>
+        var productList = $('#product-list');
+
+        function renderProduct(productData) {
+            var productDiv = $('<div>').addClass('product');
+
+            var title = $('<div>').addClass('product-title').text(productData.title);
+
+                //  duty  count * price = price 
+            var price = $('<div>').addClass('product-price').text('Price: $' + (productData.price * productData.count));
+
+            // text Quantity
+            var quantityLabel = $('<span>').text('Quantity: ');
+
+            // input  number
+            var quantityInput = $('<input>').attr({
+                type: 'number',
+                // keep productData.count bring *
+                value: productData.count,
+                min: 1
+                // bring create input classs quantity-input
+            }).addClass('quantity-input');
+
+            // * duty = keep productData.count bring *
+            quantityInput.on('change', function() {
+                var newCount = parseInt($(this).val());
+                if (!isNaN(newCount) && newCount >= 1) {
+                    productData.count = newCount;
+                    price.text('Price: $' + (productData.price * productData.count));
+                }
+            });
+
+            //create div text with input for data product
+            var quantityControls = $('<div>').addClass('quantity-controls');
+            quantityControls.append(quantityLabel, quantityInput);
+
+            productDiv.append(title, price, quantityControls);
+
+            productList.append(productDiv);
+        }
+
+        product.forEach(function(item) {
+            renderProduct(item);
+        });
+    });
+</script>
+
+</body>
+</html>

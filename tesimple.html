@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .product-desc {
+            color: #666;
+            margin-top: 5px;
+        }
+        .product-price {
+            margin-top: 5px;
+        }
+        .price-controls {
+            margin-top: 10px;
+        }
+        .quantity-controls {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="product-list"></div>
+
+<script>
+    var product = [
+        { id: 1, title: 'Product 1', price: 20 },
+        { id: 2, title: 'Product 2', price: 30 }
+        // Add more products as needed
+    ];
+
+    var productList = document.getElementById('product-list');
+
+    function renderProduct(productData) {
+        var productDiv = document.createElement('div');
+        productDiv.classList.add('product');
+
+        var title = document.createElement('div');
+        title.classList.add('product-title');
+        title.textContent = productData.title;
+
+        var price = document.createElement('div');
+        price.classList.add('product-price');
+        price.textContent = 'Price: $' + productData.price;
+
+        var increaseButton = document.createElement('button');
+        increaseButton.textContent = '+';
+        increaseButton.addEventListener('click', function() {
+            changePrice(productData, 1);
+        });
+
+        var decreaseButton = document.createElement('button');
+        decreaseButton.textContent = '-';
+        decreaseButton.addEventListener('click', function() {
+            changePrice(productData, -1);
+        });
+
+        var priceControls = document.createElement('div');
+        priceControls.classList.add('price-controls');
+        priceControls.appendChild(increaseButton);
+        priceControls.appendChild(decreaseButton);
+
+        var quantityLabel = document.createElement('span');
+        quantityLabel.textContent = 'Quantity: ';
+
+        var quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.value = 1;
+        quantityInput.min = 1;
+        quantityInput.addEventListener('change', function() {
+            var quantity = parseInt(quantityInput.value);
+            changePrice(productData, quantity - 1);
+        });
+
+        var quantityControls = document.createElement('div');
+        quantityControls.classList.add('quantity-controls');
+        quantityControls.appendChild(quantityLabel);
+        quantityControls.appendChild(quantityInput);
+
+        productDiv.appendChild(title);
+        productDiv.appendChild(price);
+        productDiv.appendChild(priceControls);
+        productDiv.appendChild(quantityControls);
+
+        productList.appendChild(productDiv);
+    }
+
+    function changePrice(productData, quantityChange) {
+        productData.price += quantityChange;
+        if (productData.price < 0) {
+            productData.price = 0; // Ensure price doesn't go below zero
+        }
+        renderProduct(productData); // Re-render the product with updated price
+    }
+
+    product.forEach(function(item) {
+        renderProduct(item);
+    });
+</script>
+
+</body>
+</html>
