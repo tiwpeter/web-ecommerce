@@ -16,11 +16,11 @@
 .icon-LazF {
     display: flex;
     background-color: #fff;
-    width: 1214px; /* กำหนดความกว้างของรูปภาพ */
-    height: 60px; /* ให้ความสูงปรับตามอัตราส่วนของรูปภาพ */
+    width: 1228px;
+    height: 60px;
     text-align: center;
-}
-
+    margin-top: 10px;
+  }
 
 
 .box-icon {

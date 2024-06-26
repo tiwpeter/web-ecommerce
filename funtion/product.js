@@ -25,7 +25,7 @@ $(document).ready(() => {
                                     </div>
                                     <div class="product-meta">
                                         <span class="rating" data-rating="${product.rating}"></span>
-                                        <span class="discount">(${product.comment})</span>
+                                        <span class="discount">(${product.reviews})</span>
                                     </div>
                                 </div>
                             `;

@@ -10,11 +10,12 @@
 
 .sectionbox {
     display: flex;
-    justify-content: center; /* จัดให้ภายในตรงกลางตามแนวแกน X */
-    align-items: center; /* จัดให้ภายในตรงกลางตามแนวแกน Y */
-    height: 100%; /* ใช้ส่วนความสูง*/
-    width: 1007px;
-}
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1024px;
+    margin-left: -19px;
+  }
 
 .sectionbox img{
     width: 100%;
